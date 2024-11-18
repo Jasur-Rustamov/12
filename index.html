@@ -1,14 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="stylesheet" href="./styles/font.css">
 
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="wrapper font-popo flex">
+        <div class="nav w-[16%] pt-14 h-screen fixed">
+            <a href="#"><img class="mb-16 ml-10" src="./images/svg/logo.svg" width="71" alt="error"></a>
+            <div class="text-light-gray">
+                <ul>
+                    <li class="flex items-center h-10 mb-4 hover:border-l-4 border-bcolor">
+                        <a class="flex items-center gap-4 pl-12 hover:text-bcolor" href="#">
+                            <img src="./images/svg/Dashboard.svg" width="24" alt="error">
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="flex items-center h-10 mb-4 hover:border-l-4 border-bcolor">
+                        <a class="flex items-center gap-4 pl-12  hover:text-bcolor" href="#">
+                            <img src="./images/svg/Lab-Test.svg" width="24" alt="error">
+                            <p>Lab Test</p>
+                        </a>
+                    </li>
+                    <li class="flex items-center h-10 mb-4 hover:border-l-4 border-bcolor">
+                        <a class="flex items-center gap-4 pl-12  hover:text-bcolor" href="#">
+                            <img src="./images/svg/Appointment.svg" width="24" alt="error">
+                            <p>Appointment</p>
+                        </a>
+                    </li>
+                    <li class="flex items-center h-10 mb-4 hover:border-l-4 border-bcolor">
+                        <a class="flex items-center gap-4 pl-12  hover:text-bcolor" href="#">
+                            <img src="./images/svg/Medicine-Order.svg" width="24" alt="error">
+                            <p>Medicine Order</p>
+                        </a>
+                    </li>
+                    <li class="flex items-center h-10 mb-4 hover:border-l-4 border-bcolor">
+                        <a class="flex items-center gap-4 pl-12  hover:text-bcolor" href="#">
+                            <img src="./images/svg/Message.svg" width="24" alt="error">
+                            <p>Message</p>
+                        </a>
+                    </li>
+                    <li class="flex items-center h-10 mb-4 hover:border-l-4 border-bcolor">
+                        <a class="flex items-center gap-4 pl-12  hover:text-bcolor" href="#">
+                            <img src="./images/svg/Payment.svg" width="24" alt="error">
+                            <p>Payment</p>
+                        </a>
+                    </li>
+                    <li class="flex items-center h-10 mb-4 hover:border-l-4 border-bcolor">
+                        <a class="flex items-center gap-4 pl-12  hover:text-bcolor" href="#">
+                            <img src="./images/svg/Settings.svg" width="24" alt="error">
+                            <p>Settings</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="mt-40 text-light-gray">
+                <li class="flex items-center h-10 mb-4 hover:border-l-4 border-bcolor">
+                    <a class="flex items-center gap-4 pl-12 " href="#">
+                        <img src="./images/svg/Help.svg" width="24" alt="error">
+                        <p>Help</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="bg-bbg w-[84%] ml-[16%]">
+            <div class="container px-10 py-14">
+                <div class="flex justify-between">
+                    <div class="relative">
+                        <input class="w-[665px] py-4 pl-16 border-[1px] rounded-md border-bor-gray outline-none"
+                            type="search" placeholder="Search">
+                        <a href="#"><img class="absolute top-4 left-5" src="./images/svg/search.svg" width="24"
+                                alt="error"></a>
+                    </div>
+                    <div class="flex justify-center items-center gap-4 relative">
+                        <div class="w-14 h-14 rounded-lg bg-white flex justify-center items-center"><a href="#"><img
+                                    src="./images/svg/notification.svg" width="24" alt="error"></a>
+                        </div>
+                        <span class="w-3 h-3 bg-jijjj rounded-full absolute top-[-5px] left-12"></span>
+                        <img src="./images/svg/Profile-Avtar.svg" width="52" alt="error">
+                    </div>
+
+                </div>
+                
+                <div class="my-11">
+                    <h2 class="text-2xl	mb-6">Sales Information</h2>
+
+                    <div class="flex justify-between">
+                        <div>
+                            <h3 class="mb-4">Customer</h3>
+                            <input class="py-2 pl-6 w-[266px] border-[1px] rounded-md border-bor-gray outline-none" type="text" placeholder="Enter Costumer Name" >
+                        </div>
+                        <div>
+                            <h3 class="mb-4">Invoice ID</h3>
+                            <input class="py-2 pl-6 w-[266px] border-[1px] rounded-md border-bor-gray outline-none" type="text" placeholder="Enter Invoice ID" >
+                        </div>
+                        <div>
+                            <h3 class="mb-4">Start Date</h3>
+                            <input class="py-2 pl-6 w-[266px] border-[1px] rounded-md border-bor-gray outline-none" type="text" placeholder="Start Date" >
+                        </div>
+                        <div>
+                            <h3 class="mb-4">End Date</h3>
+                            <input class="py-2 pl-6 w-[266px] border-[1px] rounded-md border-bor-gray outline-none" type="text" placeholder="End Date" >
+                        </div>
+                    </div>
+                </div>
+
+                <table class="w-full bg-white">
+                    <tr class="text-left border-b-[1px]">
+                        <th class="py-6 pl-6 flex gap-6"><input class="w-6 cursor-pointer" type="checkbox">Invoice ID</th>
+                        <th>Date</th>
+                        <th>Customer</th>
+                        <th>Payable Amount</th>
+                        <th>Paid Amount</th>
+                        <th>Due</th>
+                    </tr>
+                    <tr class="text-light-gray border-b-[1px]">
+                        <td class="py-6 pl-6 flex gap-6"><input class="w-6 cursor-pointer" type="checkbox"><a class="text-bcolor" href="#">#AHGA68</a></td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                    </tr>
+                    <tr class="text-light-gray border-b-[1px]">
+                        <td class="py-6 pl-6 flex gap-6"><input class="w-6 cursor-pointer" type="checkbox"><a class="text-bcolor" href="#">#AHGA68</a></td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                    </tr>
+                    <tr class="text-light-gray border-b-[1px]">
+                        <td class="py-6 pl-6 flex gap-6"><input class="w-6 cursor-pointer" type="checkbox"><a class="text-bcolor" href="#">#AHGA68</a></td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                    </tr>
+                    <tr class="text-light-gray border-b-[1px]">
+                        <td class="py-6 pl-6 flex gap-6"><input class="w-6 cursor-pointer" type="checkbox"><a class="text-bcolor" href="#">#AHGA68</a></td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                    </tr>
+                    <tr class="text-light-gray border-b-[1px]">
+                        <td class="py-6 pl-6 flex gap-6"><input class="w-6 cursor-pointer" type="checkbox"><a class="text-bcolor" href="#">#AHGA68</a></td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                    </tr>
+                    <tr class="text-light-gray border-b-[1px]">
+                        <td class="py-6 pl-6 flex gap-6"><input class="w-6 cursor-pointer" type="checkbox"><a class="text-bcolor" href="#">#AHGA68</a></td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                    </tr>
+                    <tr class="text-light-gray border-b-[1px]">
+                        <td class="py-6 pl-6 flex gap-6"><input class="w-6 cursor-pointer" type="checkbox"><a class="text-bcolor" href="#">#AHGA68</a></td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                    </tr>
+                    <tr class="text-light-gray border-b-[1px]">
+                        <td class="py-6 pl-6 flex gap-6"><input class="w-6 cursor-pointer" type="checkbox"><a class="text-bcolor" href="#">#AHGA68</a></td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                    </tr>
+                    <tr class="text-light-gray">
+                        <td class="py-6 pl-6 flex gap-6"><input class="w-6 cursor-pointer" type="checkbox"><a class="text-bcolor" href="#">#AHGA68</a></td>
+                        <td>23/09/2022</td>
+                        <td>Jacob Marcus</td>
+                        <td>$100</td>
+                        <td>$000</td>
+                        <td>$000</td>
+                    </tr>
+                    
+                    
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
